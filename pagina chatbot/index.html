@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot - WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Usamos Material Icons -->
+</head>
+<body>
+
+    <!-- Contenedor principal del chatbot -->
+    <div class="chat-container">
+        <!-- Cabecera -->
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/WhatsApp_logo.svg/500px-WhatsApp_logo.svg.png" alt="Logo" class="chat-logo">
+                <span>ChatBot</span>
+            </div>
+            <div class="chat-header-right">
+                <span class="material-icons">search</span>
+                <span class="material-icons">more_vert</span>
+            </div>
+        </div>
+
+        <!-- Ventana de mensajes -->
+        <div class="chat-box" id="chat-box">
+            <!-- Los mensajes se agregarán aquí -->
+        </div>
+
+        <!-- Caja de entrada -->
+        <div class="chat-input">
+            <span class="material-icons">emoji_emotions</span>
+            <input type="text" id="user-input" placeholder="Escribe un mensaje..." autocomplete="off">
+            <button id="send-btn"><span class="material-icons">send</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
